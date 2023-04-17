@@ -9,9 +9,26 @@ Do not remove the back-link in this web template
 @import url('font-awesome.css');
 @import url('animate.css');
 
+/* Variables for font-size and colors*/
+:root{
+	--lg-h-font-size:34px;
+	--sm-h-font-size:22px;
+	--lg-default-font-size:21px;
+	--sm-default-font-size:16px;
+	--lg-secondary-font-size:16px;
+	--sm-secondary-font-size:13px;
+	--md-h-font-size:24px;
+	--md-default-font-size:18px;
+	--md-secondary-font-size:15px;
+	--green:#6ed087 ;
+	--blue:#2fadde ;
+	--blue-purple:#6577f2;
+	--body-font:'Open Sans', Arial, sans-serif;
+}
+
 body {
-	font-family: 'Open Sans', Arial, sans-serif;
-	font-size: 14px;
+	font-family: var(--body-font);
+	font-size: var(--lg-default-font-size);
 	font-weight: 300;
 	line-height: 1.6em;
 	color: #656565;
@@ -31,7 +48,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Open Sans', Arial, sans-serif;
+	font-family: var(--body-font);
 	font-weight: 700;
 	line-height: 1.1em;
 	color: #333;
@@ -106,6 +123,8 @@ header .navbar-collapse ul.navbar-nav {
 header .navbar-default {
 	background-color: #2FADDE;
 }
+
+
 
 header .nav li a:hover,
 header .nav li a:focus,
@@ -199,14 +218,14 @@ header .nav li .dropdown-menu {
 header .nav li .dropdown-menu li a {
 	line-height: 28px;
 	padding: 3px 12px;
-	background: #2fadde;
+	background:var(--blue);
 	font-weight: 700;
 }
 
 header .nav li .dropdown-menu li a:hover {
 	/* line-height: 28px;
 	padding: 3px 12px; */
-	background: #2fadde;
+	background: var(--blue);
 }
 
 /* --- menu --- */
@@ -250,6 +269,7 @@ header ul.nav li ul li a {
 	background: none;
 	font-weight: 700;
 }
+
 
 .navbar .nav>.active>a:active,
 .navbar .nav>.active>a:focus {
@@ -1336,6 +1356,17 @@ footer .widget .flickr_badge {
 footer .widget .flickr_badge img {
 	margin: 0 9px 20px 0;
 }
+footer .container .row .col-lg-3 .widget .widgetheading,
+footer .container .row .col-lg-3 .widget  address,
+footer .container .row .col-lg-3 .widget  p,
+footer .container .row .col-lg-3 .widget .link-list li>a {
+	font-size: var(--lg-secondary-font-size);
+}
+
+footer .container .row .col-lg-3 .widget .link-list li>a:visited {
+	color:var(--green);
+}
+
 
 .flickr_badge img {
 	width: 50px;
@@ -1373,6 +1404,7 @@ footer a {
 footer a:hover {
 	color: #eee;
 }
+
 
 footer h1,
 footer h2,
@@ -1438,8 +1470,7 @@ ul.social-network li {
 	height: 32px;
 	bottom: 0px;
 	right: 20px;
-	background: #222;
-
+	background:var(--blue);
 }
 
 a.scrollup {
@@ -1457,6 +1488,7 @@ a.scrollup:focus {
 a.scrollup i {
 	margin-top: 10px;
 	color: #fff;
+	font-size: 15px;
 }
 
 a.scrollup i:hover {
@@ -1527,7 +1559,7 @@ article .align-right {
 	margin: 5px 0 15px 15px;
 }
 
-=============================*/ .clear-marginbot {
+/*=============================*/ .clear-marginbot {
 	margin-bottom: 0;
 }
 
@@ -1610,6 +1642,7 @@ article .align-right {
 	body {
 		padding-right: 0;
 		padding-left: 0;
+		font-size: var(--md-default-font-size);
 	}
 
 	.navbar-brand {
@@ -1748,12 +1781,22 @@ article .align-right {
 
 }
 
+footer .container .row .col-lg-3 .widget .widgetheading,
+footer .container .row .col-lg-3 .widget  address,
+footer .container .row .col-lg-3 .widget  p,
+footer .container .row .col-lg-3 .widget .link-list li>a {
+	font-size: var(--md-secondary-font-size);
+}
+
 @media (max-width: 480px) {
+	body{
+		font-size: var(--sm-default-font-size);
+	}
 	.bottom-article a.pull-right {
 		float: left;
 		margin-top: 20px;
 	}
-
+	
 
 	.search {
 		float: left;
@@ -1774,6 +1817,13 @@ article .align-right {
 		height: 20px;
 		font-size: 14px;
 	}
+
+footer .container .row .col-lg-3 .widget .widgetheading,
+footer .container .row .col-lg-3 .widget  address,
+footer .container .row .col-lg-3 .widget  p,
+footer .container .row .col-lg-3 .widget .link-list li>a {
+	font-size: var(--sm-secondary-font-size);
+}
 
 
 }
