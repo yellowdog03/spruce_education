@@ -744,7 +744,7 @@ form#commentform textarea {
 	display: block;
 }
 
-.work-nav #filters li a:hover {}
+
 
 .work-nav #filters li a.selected {
 	color: #DE5E60;
@@ -1282,8 +1282,6 @@ ul.team-detail li ul.social-network li i {
 	display: block;
 	color: #fff;
 }
-
-.pricing-box-item.activeItem .pricing-heading h3 {}
 
 .pricing-box-item .pricing-heading h3 strong {
 	font-size: 28px;
