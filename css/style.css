@@ -24,6 +24,7 @@ Do not remove the back-link in this web template
 	--blue:#2fadde ;
 	--blue-purple:#6577f2;
 	--body-font:'Open Sans', Arial, sans-serif;
+	--body-text:#161414 ;
 }
 
 body {
@@ -31,7 +32,7 @@ body {
 	font-size: var(--lg-default-font-size);
 	font-weight: 300;
 	line-height: 1.6em;
-	color: #656565;
+	color: var(--body-text);
 }
 
 a:active {
@@ -51,8 +52,23 @@ h6 {
 	font-family: var(--body-font);
 	font-weight: 700;
 	line-height: 1.1em;
-	color: #333;
 	margin-bottom: 20px;
+}
+
+h1{
+	background-image: linear-gradient(to top,var(--green),var(--blue),var(--blue-purple));
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6{
+	color: var(--blue-purple);
 }
 
 .container {
@@ -996,6 +1012,10 @@ blockquote cite a:visited {
 	color: #555;
 }
 
+/* About Us */
+
+ 
+
 /* --- pullquotes --- */
 
 .pullquote-left {
@@ -1361,9 +1381,10 @@ footer .container .row .col-lg-3 .widget .link-list li>a {
 	font-size: var(--lg-secondary-font-size);
 }
 
-footer .container .row .col-lg-3 .widget .link-list li>a:visited {
-	color:var(--green);
+footer .container .row .col-lg-3 .widget .link-list li>a:hover {
+	color: var(--green);
 }
+
 
 
 .flickr_badge img {
