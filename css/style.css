@@ -344,6 +344,11 @@ select.selectmenu {
 	display: inline-block;
 }
 
+.subTitle{
+	color:#fff;
+	margin:20px 0 2px;
+}
+
 #featured {
 	width: 100%;
 	background: #000;
