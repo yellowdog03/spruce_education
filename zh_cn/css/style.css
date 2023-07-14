@@ -1721,7 +1721,7 @@ article .align-right {
 
 	.navbar-collapse.collapse {
 		border: none;
-		overflow: hidden;
+		overflow: scroll;/*hidden*/;
 	}
 
 
