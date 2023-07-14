@@ -1825,6 +1825,10 @@ footer .container .row .col-lg-3 .widget .link-list li>a {
 		display: none;
 	}
 
+	.navbar-collapse.collapse {
+		border: none;
+		height: auto; 
+	}
 
 	.cta-text {
 		margin: 0 auto;
