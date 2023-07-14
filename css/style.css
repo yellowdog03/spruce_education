@@ -1832,7 +1832,7 @@ footer .container .row .col-lg-3 .widget .link-list li>a {
 
 	.navbar-collapse.collapse {
 		border: none;
-		overflow: scroll;/*hidden*/;
+		height: auto; 
 	}
 
 
