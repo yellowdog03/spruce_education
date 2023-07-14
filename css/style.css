@@ -1726,7 +1726,7 @@ article .align-right {
 
 	.navbar-collapse.collapse {
 		border: none;
-		overflow: hidden;
+		overflow: scroll;/*hidden*/;
 	}
 
 
@@ -1828,6 +1828,11 @@ footer .container .row .col-lg-3 .widget .link-list li>a {
 
 	.flexslider .flex-caption {
 		display: none;
+	}
+
+	.navbar-collapse.collapse {
+		border: none;
+		overflow: scroll;/*hidden*/;
 	}
 
 
