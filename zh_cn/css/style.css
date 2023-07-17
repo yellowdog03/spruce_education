@@ -379,13 +379,13 @@ select.selectmenu {
 	margin: 0;
 	padding: 25px 25px 25px 30px;
 	position: absolute;
-	left: 10%;
+	left: 0px;/*10%*/;
 	right: 0px;
 }
 
 .flex-caption h3 {
 	color: #fff;
-	letter-spacing: 1px;
+	letter-spacing: 3px;
 	margin-bottom: 8px;
 	text-transform: uppercase;
 }
