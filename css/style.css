@@ -358,6 +358,15 @@ select.selectmenu {
 	margin: 0;
 	padding: 0;
 }
+.featured2 {
+    width: 42%;
+    margin-right: 0%;
+    margin-left: 6%;
+    float: left;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-size: 20px;
+    
+}
 
 /*  Sliders
 ==================================== */
