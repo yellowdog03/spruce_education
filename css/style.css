@@ -114,6 +114,7 @@ header .navbar {
 
 .navbar-default {
 	border: none;
+	max-height: 100px;
 }
 
 .navbar-brand {
@@ -1087,7 +1088,9 @@ ul.link-list li {
 }
 
 footer {
+	width: 100%;
 	background: #6577f2;
+	height: min-content;
 }
 
 footer ul.link-list li a {
@@ -1389,6 +1392,11 @@ footer .widget .flickr_badge {
 
 footer .widget .flickr_badge img {
 	margin: 0 9px 20px 0;
+}
+footer .container {
+	padding-top: 0px;
+    padding: 0px; /* Adjust padding as needed */
+    margin: auto; /* Center the footer container */
 }
 footer .container .row .col-lg-3 .widget .widgetheading,
 footer .container .row .col-lg-3 .widget  address,
